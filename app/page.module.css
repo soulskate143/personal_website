@@ -1,9 +1,4 @@
 
-
-html {
-  scroll-behavior: smooth;
-}
-
 /* Header */
 .header {
   font-family: var(--font-geist-sans), sans-serif;
