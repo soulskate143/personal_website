@@ -29,8 +29,7 @@ export default function Home() {
 
           {/* Title with stacked layout */}
           <h1 className={styles.title}>
-            <span>Building the Future</span>
-            <span className={styles.ofText}>Of</span>
+            <span>Building the Future of</span>
             <span className={styles.animatedWordContainer}>
               {words.map((word, index) => (
                 <span
