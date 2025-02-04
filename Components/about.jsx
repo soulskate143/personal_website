@@ -5,11 +5,12 @@ export default function About() {
     <section className={styles.about} id="about">
       <h2>About Me</h2>
       <p>
-        I’m a passionate developer specializing in crafting immersive, futuristic web experiences and innovative IoT solutions. With expertise in <strong>Next.js</strong>, <strong>React</strong>, <strong>Three.js</strong>, and <strong>IoT device programming</strong>, I bring ideas to life by blending cutting-edge technology with elegant design.
+      I’m a developer passionate about merging the digital and physical worlds. 
+      As a developer, I specialize in architecting immersive web applications and scalable IoT ecosystems, 
+      bridging the gap between elegant software interfaces and intelligent hardware systems.
       </p>
 
       {/* Skills Section */}
-  
       <section className={styles.skillsSection}>
         <h2>My Skills</h2>
         <div className={styles.skillItem} data-skill="HTML">

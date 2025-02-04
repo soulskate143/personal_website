@@ -1,9 +1,4 @@
 
-
-html {
-  scroll-behavior: smooth;
-}
-
 /* Header */
 .header {
   font-family: var(--font-geist-sans), sans-serif;
@@ -199,8 +194,8 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: -1; /* Places it behind the menu */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
@@ -233,17 +228,17 @@ html {
   }
 
   .navItem:hover {
-    color: #ff6b6b; /* Highlight color on hover */
-    background: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+    color: #ff6b6b;
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .navItem:active {
-    transform: scale(0.95); /* Slight scale effect on click */
+    transform: scale(0.95);
   }
 
   /* Close Button Styling */
   .menuToggle[aria-expanded="true"] {
-    color: #ff6b6b; /* Highlight color for close button */
+    color: #ff6b6b; 
   }
 
   /* Ensure Menu Button is Always Visible */
@@ -279,7 +274,7 @@ html {
   }
 
   .about p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .experienceItem h4 {
@@ -299,11 +294,10 @@ html {
   }
 
   .mobileBranding {
-    display: block; /* Show only on mobile */
+    display: block;
   }
 
 }
-
 
 .container {
   font-family: 'Poppins', sans-serif;
@@ -317,8 +311,6 @@ html {
   width: 100vw;
   padding-top: 80px;
 }
-
-
 
 /* Hero Section */
 .hero {
@@ -398,7 +390,7 @@ html {
 }
 
 .buttonOutline:hover {
-  color: #0f0f0f;
+  color: #ffffff;
 }
 
 /* Media Queries for Mobile Devices */
@@ -470,15 +462,15 @@ html {
 
 /* About Section */
 .about {
-  padding: 40px 20px; /* Reduced padding for mobile */
-  max-width: 900px; /* Full width on mobile */
+  padding: 40px 20px;
+  max-width: 900px;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   box-shadow: 0px 10px 20px rgba(0, 255, 255, 0.15);
   backdrop-filter: blur(12px);
-  margin: 30px auto; /* Reduced margin for mobile */
-  animation: fadeInUp 1s ease-in-out; /* Add animation */
+  margin: 30px auto; 
+  animation: fadeInUp 1s ease-in-out;
 }
 
 @keyframes fadeInUp {
@@ -493,36 +485,36 @@ html {
 }
 
 .about h2 {
-  font-size: 2rem; /* Smaller font size for mobile */
+  font-size: 2rem;
   margin-bottom: 15px;
-  letter-spacing: 1px; /* Reduced letter spacing */
+  letter-spacing: 1px;
   color: var(--primary-color);
-  animation: fadeIn 1.5s ease-in-out; /* Add animation */
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .about p {
   color: #bbb;
-  font-size: 1rem; /* Adjusted font size for mobile */
-  line-height: 1.6; /* Improved readability */
+  font-size: 1.3rem;
+  line-height: 1.6;
   margin-bottom: 0px;
-  animation: fadeIn 2s ease-in-out; /* Add animation */
+  animation: fadeIn 2s ease-in-out;
 }
 
 .about h3 {
-  font-size: 1.8rem; /* Smaller font size for mobile */
-  margin-top: 0px; /* Reduced margin */
-  margin-bottom: 15px; /* Reduced margin */
+  font-size: 1.8rem;
+  margin-top: 0px;
+  margin-bottom: 15px; 
   color: var(--primary-color);
   text-align: center;
-  animation: fadeIn 1.5s ease-in-out; /* Add animation */
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Timeline Layout */
 .experienceList {
   position: relative;
-  max-width: 100%; /* Full width on mobile */
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px 30px; /* Reduced padding for mobile */
+  padding: 20px 30px;
 }
 
 /* Vertical Line (Timeline) */
@@ -530,8 +522,8 @@ html {
   content: '';
   position: absolute;
   top: 0;
-  left: 39px; /* Adjusted for mobile */
-  width: 1px; /* Thinner line */
+  left: 39px;
+  width: 1px; 
   height: 100%;
   background: var(--primary-color);
 }
@@ -539,9 +531,9 @@ html {
 /* Work Experience Items */
 .experienceItem {
   position: relative;
-  padding-left: 30px; /* Reduced padding for mobile */
-  margin-bottom: 30px; /* Reduced margin for mobile */
-  text-align: left; /* Align text to the left */
+  padding-left: 30px;
+  margin-bottom: 30px; 
+  text-align: left; 
 }
 
 /* Timeline Marker */
@@ -550,49 +542,49 @@ html {
   position: absolute;
   left: 0;
   top: 0;
-  width: 15px; /* Smaller marker */
-  height: 15px; /* Smaller marker */
+  width: 15px;
+  height: 15px; 
   background: var(--primary-color);
   border-radius: 50%;
-  border: 2px solid rgba(0, 255, 255, 0.5); /* Thinner border */
+  border: 2px solid rgba(0, 255, 255, 0.5);
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Content Styling */
 .experienceItem h4 {
-  font-size: 1.3rem; /* Smaller font size for mobile */
+  font-size: 1.3rem;
   color: var(--primary-color);
-  margin-bottom: 8px; /* Reduced margin */
+  margin-bottom: 8px;
   text-align: left;
 }
 
 .experienceItem .company {
-  font-size: 1rem; /* Smaller font size for mobile */
+  font-size: 1rem;
   color: #bbb;
   margin-bottom: 5px;
   text-align: left;
 }
 
 .experienceItem .duration {
-  font-size: 0.8rem; /* Smaller font size for mobile */
+  font-size: 0.8rem;
   color: #888;
-  margin-bottom: 8px; /* Reduced margin */
+  margin-bottom: 8px;
   font-style: italic;
   text-align: left;
 }
 
 .experienceItem ul {
   list-style-type: disc;
-  margin-left: 20px; /* Adjusted margin for mobile */
-  padding-left: 10px; /* Adjusted padding for mobile */
+  margin-left: 20px;
+  padding-left: 10px; 
   text-align: left;
 }
 
 .experienceItem li {
-  font-size: 0.9rem; /* Smaller font size for mobile */
+  font-size: 0.9rem;
   color: #bbb;
   margin-bottom: 5px;
-  line-height: 1.5; /* Improved readability */
+  line-height: 1.5;
 }
 
 /* Hover Effect */
@@ -610,37 +602,37 @@ html {
     max-width: 350px;
   }
   .about {
-    padding: 30px 15px; /* Further reduced padding for smaller screens */
-    margin: 20px auto; /* Further reduced margin */
+    padding: 30px 15px;
+    margin: 20px auto;
     max-width: 350px;
   }
 
   .about h2 {
-    font-size: 1.8rem; /* Even smaller font size for very small screens */
+    font-size: 1.8rem;
   }
 
   .about h3 {
-    font-size: 1.5rem; /* Even smaller font size for very small screens */
+    font-size: 1.5rem; 
   }
 
   .about p {
-    font-size: 0.9rem; /* Even smaller font size for very small screens */
+    font-size: 0.9rem; 
   }
 
   .experienceItem h4 {
-    font-size: 1.2rem; /* Even smaller font size for very small screens */
+    font-size: 1.2rem;
   }
 
   .experienceItem .company {
-    font-size: 0.9rem; /* Even smaller font size for very small screens */
+    font-size: 0.9rem; 
   }
 
   .experienceItem .duration {
-    font-size: 0.75rem; /* Even smaller font size for very small screens */
+    font-size: 0.75rem; 
   }
 
   .experienceItem li {
-    font-size: 0.85rem; /* Even smaller font size for very small screens */
+    font-size: 0.85rem; 
   }
 }
 
@@ -681,7 +673,7 @@ html {
 }
 
 .skillItem label {
-  font-size: 1rem; /* Smaller font size for mobile */
+  font-size: 1rem;
   font-weight: bold;
   color: #f0f0f0;
   text-transform: uppercase;
@@ -689,7 +681,7 @@ html {
 
 .skillItem progress {
   width: 100%;
-  height: 10px; /* Smaller height for mobile */
+  height: 10px;
   appearance: none;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -767,11 +759,14 @@ html {
   text-decoration: none;
   font-weight: 600;
   transition: all var(--transition-speed) ease;
+  font-size: 1rem; 
 }
 
 /* Hover effects for buttons */
 .categorySelector button:hover {
-  background-color: #00adb5;
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  box-shadow: 0px 5px 25px rgba(0, 255, 255, 0.6);
+  color: #ffffff
 }
 
 /* Active button styles */
@@ -798,32 +793,32 @@ html {
   }
 
   .gridContainer {
-    grid-template-columns: 1fr; /* Single column layout on mobile */
+    grid-template-columns: 1fr;
   }
 
   .title {
-    font-size: 1.5rem; /* Smaller font size on mobile */
+    font-size: 1.5rem; 
   }
 
   .categorySelector button {
-    padding: 8px 16px; /* Smaller buttons on mobile */
-    font-size: 0.9rem; /* Slightly smaller font size */
+    padding: 8px 16px; 
+    font-size: 0.9rem; 
   }
 
   .card {
-    height: 250px; /* Adjust card height for mobile */
+    height: 250px; 
   }
 
   .cardContent h3 {
-    font-size: 1.25rem; /* Smaller project titles */
+    font-size: 1.25rem; 
   }
 
   .cardContent p {
-    font-size: 0.9rem; /* Smaller text on mobile */
+    font-size: 0.9rem; 
   }
 
   .projectLink {
-    padding: 6px 14px; /* Smaller link padding */
+    padding: 6px 14px; 
   }
 }
 
@@ -839,7 +834,7 @@ html {
 }
 
 .card:hover {
-  transform: scale(1.05); /* Hover effect */
+  transform: scale(1.05); 
 }
 
 /* Background for the project image */
@@ -851,7 +846,10 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure the content stays on top */
+  z-index: -1;
+  margin: -5px;
+  filter: blur(20px);
+
 }
 
 /* Card content */
@@ -889,13 +887,80 @@ html {
   background-color: #007580;
 }
 
+/*For word interchange*/
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem; /* Reduce spacing between lines */
+}
+
+.ofText {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.1rem;
+}
+
+.animatedWordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8ch; /* Fixed width to maintain alignment */
+  height: 2.5rem; /* Keeps word height consistent */
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.animatedWordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8ch; /* Fixed width to maintain alignment */
+  height: 2.5rem; /* Keeps word height consistent */
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.animatedWord {
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(0%) translateY(-50%);
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  white-space: nowrap;
+  font-size: 2.5rem;
+  color: #ff9901;
+  text-shadow: 0px 0px 10px rgba(247, 247, 247, 0.3);
+  font-weight: bold;
+  text-align: center;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0%);
+}
+
+.hide {
+  opacity: 0;
+  transform: translateX(50%) translateY(0%); /* Moves out to the right */
+}
+
+
+
+
 
 
 
 /* Custom neon colors for each skill */
-.skillItem[data-skill="HTML"] progress::-webkit-progress-value { background: #05d621; box-shadow: 0 0 5px #05d621; }
-.skillItem[data-skill="CSS"] progress::-webkit-progress-value { background: #05d621; box-shadow: 0 0 5px #05d621; }
-.skillItem[data-skill="JavaScript"] progress::-webkit-progress-value { background: #05d621; box-shadow: 0 0 5px #05d621; }
-.skillItem[data-skill="React"] progress::-webkit-progress-value { background: #05d621; box-shadow: 0 0 5px #05d621; }
-.skillItem[data-skill="Node.js"] progress::-webkit-progress-value { background: #05d621; box-shadow: 0 0 5px #05d621; }
-.skillItem[data-skill="Next.js"] progress::-webkit-progress-value { background: #05d621; box-shadow: 0 0 5px #05d621; }
+.skillItem[data-skill="HTML"] progress::-webkit-progress-value { background: #ff9901; box-shadow: 0 0 5px #ff9901; }
+.skillItem[data-skill="CSS"] progress::-webkit-progress-value { background: #ff9901; box-shadow: 0 0 5px #ff9901; }
+.skillItem[data-skill="JavaScript"] progress::-webkit-progress-value { background: #ff9901; box-shadow: 0 0 5px #ff9901; }
+.skillItem[data-skill="React"] progress::-webkit-progress-value { background: #ff9901; box-shadow: 0 0 5px #ff9901; }
+.skillItem[data-skill="Node.js"] progress::-webkit-progress-value { background: #ff9901; box-shadow: 0 0 5px #ff9901; }
+.skillItem[data-skill="Next.js"] progress::-webkit-progress-value { background: #ff9901; box-shadow: 0 0 5px #ff9901; }

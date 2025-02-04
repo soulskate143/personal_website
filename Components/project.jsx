@@ -22,12 +22,6 @@ const softwareProjects = [
     imageUrl: "/software2.jpg",
     link: "/projects/software2",
   },
-  {
-    title: "Software Project 4",
-    description: "A data visualization dashboard for real-time analytics.",
-    imageUrl: "/software2.jpg",
-    link: "/projects/software2",
-  },
 ];
 
 const hardwareProjects = [
