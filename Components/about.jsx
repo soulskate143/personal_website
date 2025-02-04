@@ -5,8 +5,8 @@ export default function About() {
     <section className={styles.about} id="about">
       <h2>About Me</h2>
       <p>
-      I’m a developer passionate about merging the digital and physical worlds. 
-      As a developer, I specialize in architecting immersive web applications and scalable IoT ecosystems, 
+      A developer passionate about merging the digital and physical worlds. 
+      I specialize in architecting immersive web applications and scalable IoT ecosystems, 
       bridging the gap between elegant software interfaces and intelligent hardware systems.
       </p>
 
@@ -19,10 +19,10 @@ export default function About() {
         </div>
         <div className={styles.skillItem} data-skill="CSS">
           <label>CSS</label>
-          <progress value="85" max="100"></progress>
+          <progress value="90" max="100"></progress>
         </div>
         <div className={styles.skillItem} data-skill="JavaScript">
-          <label>JavaScript</label>
+          <label>Java</label>
           <progress value="80" max="100"></progress>
         </div>
         <div className={styles.skillItem} data-skill="React">
@@ -37,40 +37,63 @@ export default function About() {
           <label>Next.js</label>
           <progress value="85" max="100"></progress>
         </div>
+        <div className={styles.skillItem} data-skill="Python">
+          <label>Python</label>
+          <progress value="60" max="100"></progress>
+        </div>
+        <div className={styles.skillItem} data-skill="C">
+          <label>C</label>
+          <progress value="85" max="100"></progress>
+        </div>
       </section>
 
       <h2>Work Experience</h2>
       <div className={styles.experienceList}>
-        <div className={styles.experienceItem}>
-          <h4>Full-Stack Developer</h4>
-          <p className={styles.company}>Tech Innovators Inc.</p>
-          <p className={styles.duration}>Jan 2022 - Present</p>
+      <div className={styles.experienceItem}>
+          <h4>Jr. System Developer</h4>
+          <p className={styles.company}>Avega Bros. Integrated Shipping Corp.</p>
+          <p className={styles.duration}>Feb 2024 - Present</p>
           <ul>
-            <li>Developed scalable web applications using Next.js and React, reducing load times by 30%.</li>
-            <li>Integrated Three.js for immersive 3D visualizations, enhancing user engagement.</li>
-            <li>Collaborated with cross-functional teams to deliver IoT solutions for smart home devices.</li>
+            <li>Designed & deployed software solutions for maritime vessels, including real-time monitoring systems, navigation tools, and IoT-integrated platforms to optimize fleet performance</li>
+            <li>Engineered robust hardware prototypes for maritime applications, from sensor networks for predictive maintenance to custom IoT devices enabling seamless ship-to-shore communication</li>
+            <li>Led end-to-end hardware installation onboard vessels, including system configuration, and compliance testing to ensure seamless integration with existing maritime infrastructure</li>
+            <li>Spearheaded rapid prototyping for hardware projects, conducting technical assessments, cost-benefit analyses, and scalability evaluations to align innovations with operational and business goals</li>
+            <li>Developed vessel surveillance system for enhanced onboard surveillance and data-driven decision-making</li>
           </ul>
         </div>
 
         <div className={styles.experienceItem}>
-          <h4>IoT Developer</h4>
-          <p className={styles.company}>FutureTech Labs</p>
-          <p className={styles.duration}>Jun 2020 - Dec 2021</p>
+          <h4>Developer & CEO</h4>
+          <p className={styles.company}>DIS I.T. Services</p>
+          <p className={styles.duration}>Jun 2020 - Aug 2022</p>
           <ul>
-            <li>Designed and implemented firmware for IoT devices, improving energy efficiency by 25%.</li>
-            <li>Built a real-time monitoring system using MQTT and Node.js for industrial IoT applications.</li>
-            <li>Optimized device communication protocols, reducing latency by 40%.</li>
+            <li>CEO of my own start up company</li>
+            <li>Asses international clients (mostly Japanese companies)</li>
+            <li>Developed and implemented systems and applications for Japanese companies</li>
+            <li>Worked with AWS(LightSail, EC2, Route53)</li>
+            <li>Assess prototyping for smart cameras for Japanese companies</li>
           </ul>
         </div>
 
         <div className={styles.experienceItem}>
-          <h4>Frontend Developer</h4>
-          <p className={styles.company}>WebCraft Studios</p>
-          <p className={styles.duration}>Mar 2018 - May 2020</p>
+          <h4>IT Staff</h4>
+          <p className={styles.company}>LGU Valencia, Bohol</p>
+          <p className={styles.duration}>Dec 2020 - May 2021</p>
           <ul>
-            <li>Created responsive and interactive user interfaces using React and CSS3.</li>
-            <li>Improved website performance by implementing lazy loading and code splitting.</li>
-            <li>Worked closely with designers to ensure pixel-perfect implementations.</li>
+            <li>Processed Municipal files on different platforms</li>
+            <li>Asses technical troubleshooting on office equipment’s</li>
+            <li>Edited Municipal banners, logos, and tarpaulins</li>
+          </ul>
+        </div>
+
+        <div className={styles.experienceItem}>
+          <h4>Volunteer IT Staff</h4>
+          <p className={styles.company}>CTU IoT Laboratory</p>
+          <p className={styles.duration}>Sep 2019 - Dec 2019</p>
+          <ul>
+            <li>Created various IoT projects</li>
+            <li>Assembled solar batteries and panels</li>
+            <li>Facilitated school meetings</li>
           </ul>
         </div>
       </div>

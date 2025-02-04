@@ -6,6 +6,7 @@ import Footer from '../Components/footer';
 import About from '../Components/about';
 import LogoHover from '../Components/LogoHover';
 import Projects from '../Components/project';
+import Contact from '../Components/contact';
 
 export default function Home() {
   const words = ["Web", "IoT", "Software", "Hardware"];
@@ -29,8 +30,7 @@ export default function Home() {
 
           {/* Title with stacked layout */}
           <h1 className={styles.title}>
-            <span>Building the Future</span>
-            <span className={styles.ofText}>Of</span>
+            <span>Building the Future of</span>
             <span className={styles.animatedWordContainer}>
               {words.map((word, index) => (
                 <span
@@ -49,18 +49,19 @@ export default function Home() {
 
 
           <p className={styles.subtitle}>
-            As a versatile developer, I craft immersive, futuristic solutions that push boundaries.
+            Hello, I'm <span className={styles.bold}>Marvin</span>. A versatile Developer crafting immersive futuristic solutions that push boundaries.
           </p>
 
           <div className={styles.buttons}>
             <a href="#projects" className={styles.button} aria-label="Explore My Work">Explore My Work</a>
-            <a href="#contact" className={styles.buttonOutline} aria-label="Get in Touch">Get in Touch</a>
+            <a href="#contacts" className={styles.buttonOutline} aria-label="Get in Touch">Get in Touch</a>
           </div>
         </div>
       </section>
 
       <About id="about" />
       <Projects id="projects" />
+      <Contact id="contacts" />
 
       {/* Footer */}
       <Footer />
