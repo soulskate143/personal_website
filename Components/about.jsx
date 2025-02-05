@@ -1,4 +1,19 @@
 import styles from '../app/page.module.css'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaJava, FaDatabase } from "react-icons/fa";
+import { SiNextdotjs, SiC } from "react-icons/si";
+
+const skills = [
+  { name: "HTML", icon: <FaHtml5 className={styles.html} /> },
+  { name: "CSS", icon: <FaCss3Alt className={styles.css} /> },
+  { name: "JavaScript", icon: <FaJs className={styles.js} /> },
+  { name: "React", icon: <FaReact className={styles.react} /> },
+  { name: "Node.js", icon: <FaNodeJs className={styles.node} /> },
+  { name: "Next.js", icon: <SiNextdotjs className={styles.next} /> },
+  { name: "Python", icon: <FaPython className={styles.python} /> },
+  { name: "C", icon: <SiC className={styles.c} /> },
+  { name: "Java", icon: <FaJava className={styles.java} /> },
+  { name: "MySQL", icon: <FaDatabase className={styles.mysql} /> },
+];
 
 export default function About() {
   return (
@@ -12,40 +27,16 @@ export default function About() {
 
       {/* Skills Section */}
       <section className={styles.skillsSection}>
-        <h2>My Skills</h2>
-        <div className={styles.skillItem} data-skill="HTML">
-          <label>HTML</label>
-          <progress value="90" max="100"></progress>
-        </div>
-        <div className={styles.skillItem} data-skill="CSS">
-          <label>CSS</label>
-          <progress value="90" max="100"></progress>
-        </div>
-        <div className={styles.skillItem} data-skill="JavaScript">
-          <label>Java</label>
-          <progress value="80" max="100"></progress>
-        </div>
-        <div className={styles.skillItem} data-skill="React">
-          <label>React</label>
-          <progress value="75" max="100"></progress>
-        </div>
-        <div className={styles.skillItem} data-skill="Node.js">
-          <label>Node.js</label>
-          <progress value="70" max="100"></progress>
-        </div>
-        <div className={styles.skillItem} data-skill="Next.js">
-          <label>Next.js</label>
-          <progress value="85" max="100"></progress>
-        </div>
-        <div className={styles.skillItem} data-skill="Python">
-          <label>Python</label>
-          <progress value="60" max="100"></progress>
-        </div>
-        <div className={styles.skillItem} data-skill="C">
-          <label>C</label>
-          <progress value="85" max="100"></progress>
-        </div>
-      </section>
+      <h2 className={styles.title}>My Skillset</h2>
+      <div className={styles.skillsContainer}>
+        {skills.map((skill) => (
+          <div key={skill.name} className={styles.skillItem}>
+            {skill.icon}
+            <span className={styles.skillName}>{skill.name}</span>
+          </div>
+        ))}
+      </div>
+    </section>
 
       <h2>Work Experience</h2>
       <div className={styles.experienceList}>
