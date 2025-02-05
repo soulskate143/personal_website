@@ -56,7 +56,7 @@ const hardwareProjects = [
     title: "IP Cam",
     description: "ESP32 Camera prototype used for remote streaming and recording",
     description2: "ESP32 Camera prototype used for remote streaming and recording",
-    images: ["/cam/1.jpg", "/cam/2.jpg", "/cam/3.jpg", "/cam/4.mp4"],
+    images: ["/cam/1.jpg", "/cam/2.jpg", "/cam/3.jpg", "/cam/5.mp4"],
   },
 ];
 
