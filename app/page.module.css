@@ -899,18 +899,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8ch; /* Fixed width to maintain alignment */
-  height: 2.5rem; /* Keeps word height consistent */
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-.animatedWordContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8ch; /* Fixed width to maintain alignment */
+  width: 10ch; /* Fixed width to maintain alignment */
   height: 2.5rem; /* Keeps word height consistent */
   overflow: hidden;
   position: relative;
@@ -924,7 +913,7 @@
   transform: translateX(0%) translateY(-50%);
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
   white-space: nowrap;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   color: #ff9901;
   text-shadow: 0px 0px 8px #ff9901;
   font-weight: bold;
