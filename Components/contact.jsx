@@ -4,7 +4,10 @@ import styles from "../app/page.module.css";
 
 const ContactSection = () => {
   return (
+
+    <><section id="contacts">
     <div className={styles.contactSection}>
+      
       <h2 className={styles.sectionTitle}>Get in Touch</h2>
 
       <div className={styles.contactGrid}>
@@ -47,7 +50,6 @@ const ContactSection = () => {
             rel="noopener noreferrer"
           >
             <FiFacebook className={styles.socialIcon} />
-            <span>Facebook</span>
           </a>
 
           <a 
@@ -57,11 +59,11 @@ const ContactSection = () => {
             rel="noopener noreferrer"
           >
             <FiInstagram className={styles.socialIcon} />
-            <span>Instagram</span>
           </a>
         </div>
       </div>
     </div>
+    </section></>
   );
 };
 
