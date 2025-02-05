@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import Header from '../Components/header';
 import styles from '../app/page.module.css';
-import Footer from '../Components/footer';
 import About from '../Components/about';
 import LogoHover from '../Components/LogoHover';
 import Projects from '../Components/project';
@@ -63,8 +62,6 @@ export default function Home() {
       <Projects id="projects" />
       <Contact id="contacts" />
 
-      {/* Footer */}
-      <Footer />
     </main>
   );
 }
