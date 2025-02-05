@@ -21,6 +21,7 @@ export const metadata = {
         type: "image/png",
       },
     ],
+  },
  
 };
 
