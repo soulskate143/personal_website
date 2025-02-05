@@ -15,8 +15,7 @@ const softwareProjects = [
   {
     title: "Stars",
     description: "A comprehensive digital platform designed to monitor, analyze, and optimize maritime operations in real time",
-    description2: "A comprehensive digital solution that integrates advanced technologies to monitor, analyze, and optimize maritime activities in real time. Designed for ports, shipping companies, and logistics operators, the platform enhances safety, efficiency, and compliance across maritime ecosystems. Visit ",
-    url: "https://stars.avegabros.org",
+    description2: "A comprehensive digital solution that integrates advanced technologies to monitor, analyze, and optimize maritime activities in real time. Designed for ports, shipping companies, and logistics operators, the platform enhances safety, efficiency, and compliance across maritime ecosystems. Visit  ",
     images: ["/stars/1.png", "/stars/2.png", "/stars/3.png", "/stars/4.png", "/stars/5.png", "/stars/6.png", 
       "/stars/7.png", "/stars/8.png", "/stars/9.png", "/stars/10.png", "/stars/11.png", "/stars/12.png", "/stars/13.png"],
   },
@@ -226,6 +225,9 @@ export default function Projects() {
           sx={{ marginBottom: "16px" }}
         >
           {selectedProject.description2}
+           <a href="https://stars.avegabros.org" target="_blank" rel="noopener noreferrer">
+            stars.avegabros.org
+          </a>
         </Typography>
 
         {/* Swiper Carousel */}
