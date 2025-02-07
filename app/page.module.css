@@ -329,7 +329,7 @@
   backdrop-filter: blur(20px);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5); /* Uniform shadow around all sides */
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
   border: 2px solid rgba(255, 255, 255, 0.2);
   max-width: 600px;
   width: 90%;
@@ -684,7 +684,7 @@
 /* Individual colors for each skill icon */
 .html { color: #e34c26; }
 .css { color: #264de4; }
-.java { color: #f8981d; } /* Java color */
+.java { color: #f8981d; }
 .js { color: #f7df1e; }
 .react { color: #61dafb; }
 .node { color: #68a063; }
@@ -892,15 +892,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.2rem; /* Reduce spacing between lines */
+  gap: 0.2rem;
 }
 
 .animatedWordContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10ch; /* Fixed width to maintain alignment */
-  height: 2.5rem; /* Keeps word height consistent */
+  width: 10ch;
+  height: 2.5rem;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -1048,8 +1048,8 @@
 }
 
 .swiperContainer {
-  padding: 10px; /* Reduced padding for mobile */
-  overflow: hidden; /* Better for mobile handling */
+  padding: 10px; 
+  overflow: hidden;
 }
 
 /* Mobile-first default styles */
@@ -1057,18 +1057,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px; /* Added spacing between slides */
+  padding: 4px; 
 }
 
 .swiperSlide {
   position: relative;
   transition: transform 0.3s ease-in-out;
-  touch-action: pan-y; /* Better touch handling */
+  touch-action: pan-y;
 }
 
 /* Mobile hover alternatives */
 @media (hover: hover) and (pointer: fine) {
-  /* Only apply hover on devices that support it */
   .swiperSlide:hover {
     z-index: 10;
     transform: scale(1.1);
@@ -1093,7 +1092,7 @@
 /* Media queries for responsive adjustments */
 @media (min-width: 640px) {
   .swiperContainer {
-    padding: 20px; /* Original padding for larger screens */
+    padding: 20px;
     overflow: visible;
   }
   
@@ -1109,7 +1108,7 @@
 
 @media (min-width: 1024px) {
   .swiperSlide:hover {
-    transform: scale(1.15); /* Slightly stronger effect on desktop */
+    transform: scale(1.15);
   }
 }
 
