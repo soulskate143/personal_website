@@ -15,7 +15,24 @@ const skills = [
   { name: "MySQL", icon: <FaDatabase className={styles.mysql} /> },
 ];
 
+const certificates = [
+  {
+    name: "HTML/CSS",
+    provider: "TestDome",
+    url: "https://www.testdome.com/certificates/4413a8aca3b341999ba9e3eed92fd813",
+  },
+];
+
 export default function About() {
+    useEffect(() => {
+    // Dynamically add TestDome CSS for certificate styling
+    const link = document.createElement("link");
+    link.href = "https://www.testdome.com/content/certificates/embed.css";
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.media = "screen,print";
+    document.head.appendChild(link);
+    }, []);
   return (
     <section className={styles.about} id="about">
       <h2>About Me</h2>
@@ -88,6 +105,26 @@ export default function About() {
           </ul>
         </div>
       </div>
+
+            {/* Certificates Section */}
+      <section className={styles.certificatesSection}>
+        <h2>Certificates</h2>
+        <div className={styles.certificatesContainer}>
+          {certificates.map((certificate) => (
+            <a 
+              key={certificate.name} 
+              href={certificate.url} 
+              className="testdome-certificate-stamp gold"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <span className="testdome-certificate-name">Marvin Toh</span>
+              <span className="testdome-certificate-test-name">{certificate.name}</span>
+              <span className="testdome-certificate-card-logo">TestDome<br/>Certificate</span>
+            </a>
+          ))}
+        </div>
+      </section>
 
     </section>
   );
