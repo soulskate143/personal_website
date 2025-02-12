@@ -6,6 +6,19 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
+}
+
+:root {
+  
+  --primary-color: rgb(5, 196, 196);
+  --secondary-color: #0088ff;
+  --background-gradient: radial-gradient(circle at top, #0f0f0f, #1a1a1a);
+  --spacing-md: 20px;
+  --transition-speed: 0.3s;
 }

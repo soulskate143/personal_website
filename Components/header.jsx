@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import styles from '../app/page.module.css'
+import styles from "../app/page.module.css";
 
 export default function Header() {
   const [visible, setVisible] = useState(true);
@@ -19,7 +19,6 @@ export default function Header() {
       requestAnimationFrame(() => {
         const currentScrollY = window.scrollY;
 
-        
         if (!isMenuOpen) {
           if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
             setVisible(false);
@@ -35,10 +34,12 @@ export default function Header() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isMenuOpen]); // Re-run effect if menu state changes
+  }, [isMenuOpen]);
 
   return (
-    <header className={`${styles.header} ${visible ? styles.visible : styles.hidden}`}>
+    <header
+      className={`${styles.header} ${visible ? styles.visible : styles.hidden}`}
+    >
       <nav className={styles.nav}>
         {/* Branding outside mobile menu (visible on desktop) */}
         <div className={styles.branding}>
@@ -64,10 +65,18 @@ export default function Header() {
         </button>
 
         {/* Mobile Menu */}
-        <ul className={`${styles.navList} ${isMenuOpen ? styles.navOpen : styles.navClosed}`}>
+        <ul
+          className={`${styles.navList} ${
+            isMenuOpen ? styles.navOpen : styles.navClosed
+          }`}
+        >
           {/* Branding inside mobile menu (visible on mobile) */}
           <li className={styles.mobileBranding}>
-            <Link href="/" className={styles.logoLink} onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="/"
+              className={styles.logoLink}
+              onClick={() => setIsMenuOpen(false)}
+            >
               <Image
                 className={styles.logo}
                 src="/mt.png"
@@ -80,10 +89,42 @@ export default function Header() {
           </li>
 
           {/* Menu Items */}
-          <li><Link href="#hero" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-          <li><Link href="#about" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About</Link></li>
-          <li><Link href="#projects" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Projects</Link></li>
-          <li><Link href="#contacts" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
+          <li>
+            <Link
+              href="#hero"
+              className={styles.navItem}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#about"
+              className={styles.navItem}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#projects"
+              className={styles.navItem}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#contacts"
+              className={styles.navItem}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
