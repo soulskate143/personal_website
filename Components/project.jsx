@@ -93,16 +93,11 @@ const hardwareProjects = [
   },
   {
     title: "Disaster",
-    description:
-      "A hardware system used in remote locations to detect floods, rain, wind, and alarm",
-    description2:
-      "A rugged IoT-enabled hardware system designed for remote locations, capable of detecting floods, rainfall, and wind conditions in real time. Equipped with smart sensors and an automated alarm system, it ensures early warnings, enhances disaster preparedness, and enables rapid response to environmental hazards.",
-    images: [
-      "/disaster/1.jpg",
-      "/disaster/2.jpg",
-      "/disaster/3.jpg",
-      "/disaster/4.jpg",
-      "/disaster/5.jpg",
+    description: "A hardware system used in remote locations to detect floods, rain, wind, and alarm",
+    description2: "A rugged IoT-enabled hardware system designed for remote locations, capable of detecting floods, rainfall, and wind conditions in real time. Equipped with smart sensors and an automated alarm system, it ensures early warnings, enhances disaster preparedness, and enables rapid response to environmental hazards.",
+    images: ["/disaster/1.jpg", "/disaster/2.jpg", "/disaster/3.jpg", "/disaster/4.jpg", "/disaster/5.jpg"],
+    languages: [
+      { name: "Java", logo: "/icons/Java.png" }
     ],
     languages: [{ name: "Java", logo: "/icons/java.png" }],
   },
@@ -113,7 +108,9 @@ const hardwareProjects = [
     description2:
       "A biometrics prototype designed for remote locations, seamlessly integrated with Firebase for real-time authentication and secure data storage. Equipped with advanced fingerprint recognition technology, it enables instant identity verification, remote access control, and centralized user management with cloud-based synchronization.",
     images: ["/bio/1.jpg", "/bio/2.jpg", "/bio/3.mp4", "/bio/4.mp4"],
-    languages: [{ name: "Java", logo: "/icons/java.png" }],
+    languages: [
+      { name: "Java", logo: "/icons/Java.png" }
+    ]
   },
   {
     title: "IP Cam",
@@ -122,7 +119,9 @@ const hardwareProjects = [
     description2:
       "ESP32 Camera prototype used for remote streaming and recording",
     images: ["/cam/1.jpg", "/cam/2.jpg", "/cam/3.jpg", "/cam/5.mp4"],
-    languages: [{ name: "Java", logo: "/icons/java.png" }],
+    languages: [
+      { name: "Java", logo: "/icons/Java.png" }
+    ]
   },
 ];
 
