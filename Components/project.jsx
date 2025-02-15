@@ -18,7 +18,7 @@ const softwareProjects = [
     description:
       "A comprehensive digital platform designed to monitor, analyze, and optimize maritime operations in real time",
     description2:
-      "A comprehensive digital solution that integrates advanced technologies to monitor, analyze, and optimize maritime activities in real time. Designed for ports, shipping companies, and logistics operators, the platform enhances safety, efficiency, and compliance across maritime ecosystems. Visit  https://stars.avegabros.org",
+      "A comprehensive digital solution that integrates advanced technologies to monitor, analyze, and optimize maritime activities in real time. Designed for ports, shipping companies, and logistics operators, the platform enhances safety, efficiency, and compliance across maritime ecosystems.",
     images: [
       "/stars/1.png",
       "/stars/2.png",
